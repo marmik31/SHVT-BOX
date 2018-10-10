@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/toolbar_layout"></include>
+
+    <fragment
+        android:layout_below="@+id/main_toolbar"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="info.androidhive.firebase.MapsActivity" />
+
+    <fragment
+        android:layout_below="@+id/main_toolbar"
+        android:id="@+id/place_autocomplete_fragment"
+        android:name="info.androidhive.firebase.autocomplete.PlaceAutoCompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_search_toolbar" />
+
+    <Button
+        android:id="@+id/btnShareLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Share Location" />
+</RelativeLayout>

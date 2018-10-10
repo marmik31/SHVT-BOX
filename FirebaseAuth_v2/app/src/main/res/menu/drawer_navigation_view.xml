@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group4"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/itemChnageEmail"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/change_email" />
+
+        <item
+            android:id="@+id/itemChangePass"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/change_password" />
+
+        <item
+            android:id="@+id/itemOurStore"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/our_store" />
+
+        <item
+            android:id="@+id/itemRemoveUser"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/remove_user" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/group7"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/itemLogout"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/btn_sign_out" />
+    </group>
+</menu>
